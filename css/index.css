@@ -1,0 +1,486 @@
+/* banner区域 */
+.banner {
+  position: relative;
+  height: 500px;
+  background-color: #f5f5f5;
+}
+
+.banner .wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+}
+
+.subnav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  z-index: 10;
+}
+
+.subnav li {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.subnav li:hover {
+  background-color: #27ba9b;
+}
+
+.subnav h4 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: normal;
+  margin-right: 15px;
+}
+
+.subnav a {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.subnav a:last-child {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.pic {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.pic li {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.pic img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.banner ol {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.banner ol li {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.banner ol li.active {
+  background-color: #fff;
+}
+
+.banner ol li i {
+  display: none;
+}
+
+/* 新鲜好物 */
+.goods {
+  margin-top: 40px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: #fff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.title h3 {
+  font-size: 30px;
+  color: #333;
+  font-weight: normal;
+}
+
+.title p {
+  margin-left: 20px;
+  font-size: 16px;
+  color: #999;
+}
+
+.title ul {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.title ul li a {
+  font-size: 16px;
+  color: #666;
+}
+
+.title ul li a:hover {
+  color: #27ba9b;
+}
+
+.title .all {
+  margin-left: 50px;
+  font-size: 16px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title .all:hover {
+  color: #27ba9b;
+}
+
+/* 商品列表 */
+.bd, .recommend {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.bd li, .recommend li {
+  width: 300px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.bd li:hover, .recommend li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.bd li img, .recommend li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.price {
+  padding: 20px;
+}
+
+.price p:first-child {
+  margin-bottom: 10px;
+}
+
+.price p a {
+  font-size: 16px;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
+
+.price p:last-child {
+  font-size: 22px;
+  color: #9a2e1f;
+  font-weight: bold;
+}
+
+.recommend .price p:last-child {
+  font-size: 16px;
+  color: #999;
+  font-weight: normal;
+}
+
+/* 热门品牌 */
+.brand {
+  background-color: #fff;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.brand .title {
+  margin-bottom: 30px;
+}
+
+.brand .jiantou {
+  display: flex;
+  gap: 15px;
+  margin-left: auto;
+}
+
+.brand .jiantou span {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.brand .jiantou span:hover {
+  background-color: #27ba9b;
+  color: #fff;
+}
+
+.brand ul {
+  display: flex;
+  gap: 10px;
+}
+
+.brand li {
+  width: 240px;
+  height: 150px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* 生鲜区域 */
+.fresh {
+  margin-top: 40px;
+}
+
+.fresh .title {
+  background-color: transparent;
+  padding: 0;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.fresh .title ul {
+  margin-left: 50px;
+}
+
+.fresh .content {
+  display: flex;
+  gap: 10px;
+}
+
+.fresh .left {
+  width: 240px;
+  height: 600px;
+}
+
+.fresh .left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fresh .right {
+  flex: 1;
+}
+
+.fresh .right ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  height: 600px;
+}
+
+.fresh .right li {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.fresh .right li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fresh .right li img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.fresh .right li a {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.fresh .right li span {
+  font-size: 22px;
+  color: #9a2e1f;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.fresh .right li span i {
+  font-size: 16px;
+  font-style: normal;
+}
+
+/* 最新专题 */
+.topic {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.topic .title {
+  margin-bottom: 30px;
+}
+
+.topic ul {
+  display: flex;
+  gap: 20px;
+}
+
+.topic li {
+  flex: 1;
+  position: relative;
+}
+
+.topic li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.topic li div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.topic li div span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.topic li div i {
+  font-style: normal;
+}
+
+/* 底部 */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.service {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #555;
+}
+
+.service ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.service li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.service h5 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.service li a:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #27ba9b;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.help {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #555;
+}
+
+.help dl {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.help dt {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.help dd {
+  margin-bottom: 10px;
+}
+
+.help dd a {
+  color: #dcdcdc;
+  font-size: 14px;
+}
+
+.help dd a:hover {
+  color: #27ba9b;
+}
+
+.help .right {
+  width: 300px;
+  display: flex;
+  gap: 20px;
+}
+
+.help .right li {
+  text-align: center;
+}
+
+.help .right img {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.help .right p {
+  color: #dcdcdc;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.copyright {
+  text-align: center

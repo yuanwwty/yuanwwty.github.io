@@ -1,0 +1,20 @@
+/* 临时替代方案 - 使用Unicode符号 */
+.icon-mobile-phone:before { content: "📱"; }
+.icon-search:before { content: "🔍"; }
+.icon-cart-full:before { content: "🛒"; }
+.icon-arrow-right-bold:before { content: "▶"; }
+.icon-arrow-left-bold:before { content: "◀"; }
+.icon-arrow-right:before { content: "→"; }
+.icon-fabulous:before { content: "👍"; }
+.icon-browse:before { content: "👁"; }
+.icon-comment:before { content: "💬"; }
+.icon-customer-service:before { content: "🎧"; }
+
+/* 通用图标样式 */
+.iconfont {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  display: inline-block;
+  margin-right: 5px;
+}
